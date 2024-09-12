@@ -1,0 +1,25 @@
+.card-list{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin: 8rem;
+}
+
+.middle-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0rem;
+}
+.programming-illus{
+    /* height: 10rem; */
+    /* width: 10rem; */
+}
+
+.m-heading{
+  color: var(--theme-color);
+  font-size: 40px;
+}
+.m-para{
+    font-size: 18px;
+    line-height: 30px;
+}

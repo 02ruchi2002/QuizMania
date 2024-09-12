@@ -1,0 +1,28 @@
+.instruction-container{
+     /* display: flex; */
+     /* flex-direction: column; */
+     padding: 2rem 10rem;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instruction-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.instruction-list > li{
+  
+}
+
+button{
+    color: white;
+    background-color: var(--theme-color);
+}
+
+.wish{
+    color: var(--theme-color);
+}

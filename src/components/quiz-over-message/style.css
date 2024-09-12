@@ -1,0 +1,21 @@
+.quiz-over-container{
+
+}
+
+.msg{
+    /* margin-top: 50px; */
+}
+.quiz-over-container > h1 {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.score{
+    color: var(--theme-color);
+}
+
+.redirect{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}

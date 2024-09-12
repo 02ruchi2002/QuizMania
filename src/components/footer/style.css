@@ -1,0 +1,34 @@
+#footer{
+    height: 200px;
+    background-color: var(--theme-color);
+    /* position: sticky;
+    bottom: 0px;
+    width: 100%; */
+    padding: 1rem 5rem;
+    color: #FFF;
+    display: flex;
+    gap: 10rem;
+    /* justify-content: space-around; */
+}
+
+.f-category{
+  
+}
+
+.f-heading{
+ width: fit-content;
+ padding-bottom: 2px;
+  border-bottom: 4px solid #FFF;
+}
+.f-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0;
+}
+
+.f-list > li{
+    /* text-decoration: none; */
+    /* list-style: none; */
+    /* list-style-type: none; */
+}

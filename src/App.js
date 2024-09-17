@@ -10,6 +10,7 @@ import Instruction from './components/instruction';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Footer from './components/footer';
+import Faq from './pages/FAQ';
 
 
 
@@ -28,11 +29,6 @@ function App() {
       path:router.quiz ,
       component: <QuizList/>
     },
-
-    // {
-    //   path:router.quizType("javascript"),
-    //   component: <Quiz />
-    // },
     {
       path:router.quizStart ,
       component: <Quiz/>
@@ -44,6 +40,10 @@ function App() {
     {
       path:router.contact ,
       component: <Contact/>
+    },
+    {
+      path:router.faq,
+      component:<Faq/>
     },
     {
       path:router.noPath,

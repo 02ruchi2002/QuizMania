@@ -5,5 +5,6 @@ export const router = {
     contact: '/contact',
     quizStart: '/quiz/:type',
     noPath: '*',
+    faq:'/faq'
 }
 

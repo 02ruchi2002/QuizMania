@@ -3,12 +3,22 @@
     border: 1px solid red;
     border: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* justify-content:space-evenly; */
+    /* align-items: start; */
     padding: 50px;
     gap: 50px;
     /* background-color: rgb(105, 99, 255); */
+}
+
+.quiz-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 50px;
 }
 
 .card{

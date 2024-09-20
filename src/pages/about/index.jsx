@@ -13,10 +13,8 @@ const offers = [
 function About() {
   return (
     <div class="about-container">
-        {/* <h1>About Us</h1> */}
         <div className='a-tagline'>
             <div>
-                {/* <h2>Welcome to our Quiz App!</h2> */}
                 <p> We're passionate about making learning fun and interactive. Our app is designed to challenge your knowledge across various topics and help you improve your skills through engaging quizzes.</p>
             </div>
             <img src={aboutIllustration} alt=''/>

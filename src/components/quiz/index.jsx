@@ -6,9 +6,6 @@ import { useParams } from "react-router-dom";
 import Message from "../quiz-over-message";
 
 const Quiz = () => {
-  // let pathName = window.location.pathname
-  // let urlStringArr = pathName.split("/")
-
   const params = useParams();
   let quizType = params.type;
 
@@ -69,17 +66,15 @@ const Quiz = () => {
 
   return (
     <>
-      {/* <h1>{quizType} quiz</h1> */}
       {isQuizStarted == false && showMessage == false ? (
         <Instruction startQuiz={setIsQuizStarted} showMesg={setShowMessage} />
       ) : null}
       {isQuizStarted == true && showMessage == false ? (
-        // <div className="parent-container">
             <div className="ques-box">
                 <div className="countDown">
                 <h1>
                     {activeIndex + 1}
-                    <span>/10</span>
+                    <span>/{data.length}</span>
                 </h1>
 
                 <h1>
@@ -137,10 +132,10 @@ const Quiz = () => {
                 </div>
                 </div>
             </div>
-        // </div>
+        
       ) : null}
       {isQuizStarted == false && showMessage == true ? (
-        <Message marks={marks} />
+        <Message marks={marks} data={data} />
       ) : null}
     </>
   );

@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 
@@ -23,8 +24,18 @@
 
 
 .search-icon{
-    color: black;
+    color: #000;
     height: 30px;
     width: 30px;
     margin-left: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.cancel-icon{
+    color: #000;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.6;
 }

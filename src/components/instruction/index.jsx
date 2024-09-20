@@ -1,11 +1,17 @@
 import React from "react";
 import './style.css'
+import { useContext } from "react";
+import { StartBtnContext } from "../../App";
 
 const Instruction = ({ startQuiz,showMesg }) => {
+
+    const startBtn = useContext(StartBtnContext)
 
     const handleStart = () => {
         startQuiz(true)
         showMesg(false)
+        startBtn(true)
+
     }
     return (
         <div className="instruction-container">

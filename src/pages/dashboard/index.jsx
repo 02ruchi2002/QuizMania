@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../components/atoms/card";
 import './style.css'
 import progammingIllustration from '../../assests/images/programming.svg'
 import feedbackIllustration from '../../assests/images/feedback.svg'
+// import { Questions } from "../../constant/data";
+
+const topics = ["Html","Css","Javascript","React","Java","Angular","Jquery","Git","Shell-Scripting","Python","Next.js","Vue.js", "Django","Golang","Springboot","Tailwind-css","Scss" ,"Ruby"]
 
 const Dashboard = () => {
+    // const [topics,setTopics] = useState(Questions)
     return(
         <>
-        {/* <h1>Dashboard</h1> */}
         <div className="card-list">
             <Card title={'Total Quizes'} count={100}/>
             <Card title={'Total Participants'} count={100}/>
@@ -39,26 +42,18 @@ const Dashboard = () => {
                 Play, learn, and improve your knowledge every day!
                 </div>
             </div>
-            
-           
        
         </div>
-        <div className="middle-content">
-            {/* <div className="programming-illus">
-                <img src={feedbackIllustration} alt=""/>
-            </div> */}
-            <div>
+        <div className="end-content">
                 <h1 className="m-heading">Topics Covered</h1>
                 <div className="m-para">
-                With each quiz, get immediate feedback and track your progress. 
-                Play, learn, and improve your knowledge every day!
-                </div>
+                   {
+                    topics.map((item,index)=>(
+                      <div className="topic">{item}</div>
+                    ))
+                   }
             </div>
-            
-           
-       
         </div>
-       
         </>
     )
 }

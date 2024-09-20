@@ -122,7 +122,7 @@ const QuizList = () => {
     return (
         <div className="container">
             <div className="search-bar">
-            <SearchBar setQuizData={setQuizData} quizData={quizData} />
+            <SearchBar setQuizData={setQuizData} quizData={quizList}  />
             </div>
             <div className="quiz-list">
             {

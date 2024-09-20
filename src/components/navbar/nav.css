@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #015bab; */
-    /* background-color: #6B62FF; */
     background-color: var(--theme-color);
     padding: 15px;
     box-shadow: 1px 1px 1px 1px #FFF;
@@ -11,9 +9,6 @@
     position: fixed;
     width: 100%;
     top:0;
-    /* left: 0; */
-    /* z-index: 2; */
-
 }
 
 .nav-container > ul{
@@ -33,11 +28,7 @@
 }
 
 .nav-container > ul > li > .active{
-    /* font-size: 18px; */
-    /* color: white; */
     opacity: 1;
-    /* font-weight: 600; */
-    /* text-decoration: underline; */
 }
 
 

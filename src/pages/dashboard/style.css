@@ -10,16 +10,38 @@
     justify-content: space-between;
     margin: 5rem 0rem;
 }
-.programming-illus{
-    /* height: 10rem; */
-    /* width: 10rem; */
-}
 
 .m-heading{
   color: var(--theme-color);
   font-size: 40px;
+  text-align: center;
 }
+
+.end-content{
+    width: 70%;
+    margin: 0 auto 50px auto;
+    padding: 10px;
+    
+}
+
+
+
 .m-para{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
     font-size: 18px;
     line-height: 30px;
+    justify-content: center;
+    gap: 25px;
+   
+   
 }
+
+.m-para > .topic{
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 5px #d9d9d9fe;
+    text-transform: capitalize;
+}
+

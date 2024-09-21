@@ -28,14 +28,19 @@ const Quiz = () => {
     if (isQuizStarted == false) {
       return;
     }
+    
+    if(minutes == 10){
+      setIsQuizStarted(false);
+      setShowMessage(true);
+    }
 
     timerId = setTimeout(() => {
       setSeconds(seconds + 1);
+
       if (seconds == 59) {
         setMinutes(minutes + 1);
         setSeconds(0);
-        setIsQuizStarted(false);
-        setShowMessage(true);
+       
       }
     }, 1000);
 

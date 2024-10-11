@@ -123,7 +123,7 @@ const Quiz = () => {
                 </div>
 
                 <div className="btn">
-                    {activeIndex == 0 || activeIndex < 9 ? (
+                    {activeIndex == 0 || activeIndex < data.length - 1 ? (
                     <button onClick={() => setActiveIndex(activeIndex + 1)}>
                         Next
                     </button>
@@ -131,7 +131,7 @@ const Quiz = () => {
                 </div>
 
                 <div className="btn">
-                    {activeIndex == 9 ? (
+                    {activeIndex == data.length-1 ? (
                     <button onClick={handleSubmit}>Submit </button>
                     ) : null}
                 </div>

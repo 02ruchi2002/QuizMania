@@ -43,3 +43,15 @@
 .contact-container  button:hover {
     background-color: #5a53e3;
 }
+
+@media (max-width: 720px) { 
+    /* breakpoints -> 481px - 720px */
+
+   
+   
+}
+
+@media (max-width: 480px) {
+    /* breakpoints -> 0px - 480px */
+
+}

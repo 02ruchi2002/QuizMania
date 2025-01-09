@@ -5,13 +5,12 @@ import { Questions } from "../../constant/data";
 import { useParams } from "react-router-dom";
 import Message from "../quiz-over-message";
 
-const Quiz = () => {
+const Quiz = ({data,setData}) => {
   const params = useParams();
   let quizType = params.type;
 
   const [isQuizStarted, setIsQuizStarted] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
-  const [data, setData] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const [marks, setMarks] = useState(0);
@@ -23,6 +22,7 @@ const Quiz = () => {
   useEffect(() => {
     setData(Questions[quizType]);
   }, []);
+
 
   useEffect(() => {
     if (isQuizStarted == false) {

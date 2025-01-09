@@ -4,6 +4,7 @@ export const router = {
     about: '/about',
     contact: '/contact',
     quizStart: '/quiz/:type',
+    result:`/quiz/:type/score`,
     noPath: '*',
     faq:'/faq'
 }

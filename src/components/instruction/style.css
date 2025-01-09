@@ -24,3 +24,15 @@ button{
 .wish{
     color: var(--theme-color);
 }
+
+@media (max-width: 720px) { 
+    /* breakpoints -> 481px - 720px */
+
+   
+   
+}
+
+@media (max-width: 480px) {
+    /* breakpoints -> 0px - 480px */
+
+}

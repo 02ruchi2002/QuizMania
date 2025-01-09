@@ -45,3 +45,18 @@
     text-transform: capitalize;
 }
 
+ /* small devices -> 480 px
+ medium devices -> 720px
+ large devices -> 1024 px */
+
+@media (max-width: 720px) { 
+     /* breakpoints -> 481px - 720px */
+
+
+    
+}
+
+@media (max-width: 480px) {
+     /* breakpoints -> 0px - 480px */
+}
+

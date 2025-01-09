@@ -11,6 +11,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Footer from './components/footer';
 import Faq from './pages/FAQ';
+import ScoreDetail from './components/score-page';
 import { useState,createContext } from 'react';
 
 export const StartBtnContext = createContext()
@@ -18,41 +19,47 @@ export const StartBtnContext = createContext()
  const quizList = [
   {
     path: router.dashBoard ,
-    component: <Dashboard/>
+    component: Dashboard
   },
   {
     path: router.instruction ,
-    component: <Instruction/>
+    component: Instruction
   },
   {
     path:router.quiz ,
-    component: <QuizList/>
+    component: QuizList
   },
   {
     path:router.quizStart ,
-    component: <Quiz/>
+    component: Quiz
   },
   {
     path:router.about ,
-    component: <About/>
+    component: About
   },
   {
     path:router.contact ,
-    component: <Contact/>
+    component: Contact
   },
   {
     path:router.faq,
-    component:<Faq/>
+    component:Faq
   },
   {
     path:router.noPath,
-    component: <h1>worng URL path</h1>
+    component: ()=><h1>worng URL path</h1>
+  },
+  {
+    path:router.result,
+    component: ScoreDetail
   },
 ]
 
 function App() {
   const [quizListData,setQuizListData] = useState(quizList)
   const [isQuizStartBtnClick,setIsQuizStartBtnClick] = useState(false)
+  const [data, setData] = useState([]);
+
 
   return (
     <div className="App">
@@ -63,7 +70,7 @@ function App() {
       <div className='content'>
       <Routes>
         {
-          quizListData.map((item, index) => (<Route key={index} path={item.path} element={item.component} />))
+          quizListData.map((item, index) => (<Route key={index} path={item.path} element={<item.component data={data} setData={setData}/>} />))
 
         }
       </Routes>

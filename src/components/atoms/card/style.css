@@ -1,8 +1,8 @@
 
 
 .card-container{
-    width: 12rem;
-    height: 12rem;
+    width: 200px;
+    height: 200px;
     border: 0.5px solid slategrey;
     border-radius: 4px;
     display: flex;
@@ -11,3 +11,16 @@
     align-items: center;
     box-shadow: 10px 10px 12px 2px var(--theme-color);
 }
+
+@media (max-width: 720px) { 
+    /* breakpoints -> 481px - 720px */
+
+   
+   
+}
+
+@media (max-width: 480px) {
+    /* breakpoints -> 0px - 480px */
+
+}
+

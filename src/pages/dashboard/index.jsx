@@ -48,8 +48,8 @@ const Dashboard = () => {
                 <h1 className="m-heading">Topics Covered</h1>
                 <div className="m-para">
                    {
-                    topics.map((item,index)=>(
-                      <div className="topic">{item}</div>
+                    topics?.map((item,index)=>(
+                      <div className="topic" key={index}>{item}</div>
                     ))
                    }
             </div>

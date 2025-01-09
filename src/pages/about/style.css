@@ -61,3 +61,15 @@
     color: #FFF;
     line-height: 25px;
 }
+
+@media (max-width: 720px) { 
+    /* breakpoints -> 481px - 720px */
+
+   
+   
+}
+
+@media (max-width: 480px) {
+    /* breakpoints -> 0px - 480px */
+
+}

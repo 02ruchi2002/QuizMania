@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./style.css";
 import Instruction from "../instruction";
 import { Questions } from "../../constant/data";
 import { useParams } from "react-router-dom";
 import Message from "../quiz-over-message";
+import "./style.css";
 
 const Quiz = ({data,setData}) => {
   const params = useParams();
@@ -12,15 +12,12 @@ const Quiz = ({data,setData}) => {
   const [isQuizStarted, setIsQuizStarted] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const [marks, setMarks] = useState(0);
-
-  const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(60);
+  const [minutes, setMinutes] = useState(9);
   let timerId;
 
   useEffect(() => {
-    setData(Questions[quizType]);
+    setData(structuredClone(Questions[quizType]));
   }, []);
 
 
@@ -29,18 +26,17 @@ const Quiz = ({data,setData}) => {
       return;
     }
     
-    if(minutes == 10){
+    if(minutes == 0){
       setIsQuizStarted(false);
       setShowMessage(true);
     }
 
     timerId = setTimeout(() => {
-      setSeconds(seconds + 1);
+      setSeconds(seconds - 1);
 
-      if (seconds == 59) {
-        setMinutes(minutes + 1);
-        setSeconds(0);
-       
+      if (seconds === 0) {
+        setMinutes(minutes - 1);
+        setSeconds(60);
       }
     }, 1000);
 
@@ -57,16 +53,6 @@ const Quiz = ({data,setData}) => {
   const handleSubmit = () => {
     setIsQuizStarted(false);
     setShowMessage(true);
-    let marks = 0;
-
-    for (let i = 0; i < data.length; i++) {
-      let item = data[i];
-      if (item.selected === item.correct) {
-        marks = marks + 1;
-      }
-    }
-
-    setMarks(marks);
   };
 
   return (
@@ -109,8 +95,8 @@ const Quiz = ({data,setData}) => {
                         ))}
                     </div>
                     );
-                    return null;
                 }
+                return null;
                 })}
                 <br />
                 <div className="button-container">
@@ -140,7 +126,7 @@ const Quiz = ({data,setData}) => {
         
       ) : null}
       {isQuizStarted == false && showMessage == true ? (
-        <Message marks={marks} data={data} />
+        <Message/>
       ) : null}
     </>
   );

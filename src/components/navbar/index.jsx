@@ -7,7 +7,7 @@ import logo from "../../assests/icons/quiz_logo.jpg"
 const Navbar = () => {
     return(
         <div className="nav-container">
-            <div className="logo"><img height={50} width={60} src={logo} alt="logo"/></div>
+            <div className="logo"><img height={50} width={60} src={logo} alt="logo"/> <span className="app-name">QuizMania</span></div>
             <ul>
                 <li><NavLink to={router.dashBoard}>Dashboard</NavLink></li>
                 <li><NavLink to={router.quiz}>Compete</NavLink></li>

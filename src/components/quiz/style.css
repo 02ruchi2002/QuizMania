@@ -8,13 +8,14 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    font-size:large;
-    font-weight: 800;
     border-radius: 4px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-
 }
 
+.question > h3{
+    font-weight: 600;
+    font-size: 16px;
+}
 .countDown > h1{
    color: var(--theme-color)
 }
@@ -28,10 +29,13 @@
 
 .options{
     column-gap: 20px;
-    font-size:large;
-    font-weight: 600;
+    font-size:16px;
+    font-weight: 500;
     color: black;
-   
+}
+
+.options > label{
+    margin-left: 10px;
 }
 
 

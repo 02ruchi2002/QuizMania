@@ -5,3 +5,45 @@
 .red{
     background-color: rgb(235, 76, 76);
 }
+
+.qbox{
+    margin-bottom: 20px;
+}
+
+.question.correct,.correct-box  {
+    background-color: #d8f3d9;
+}
+.question.incorrect, .incorrect-box {
+    background-color: #e8b1b1;
+}
+.question.unattempted, .unattempted-box {
+    background-color: rgb(213, 213, 213);
+}
+.correct-box,.incorrect-box, .unattempted-box{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+.color-identifier{
+    display: flex;
+    gap:20px;
+}
+.color-identifier > span{
+    margin-right: 25px;
+}
+.result-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.result-icon{
+    display: inline;
+    margin-left: 10px;
+}
+.result-icon > img{
+    width: 20px;
+}
+.radio-option-result :disabled{
+    accent-color: rgb(83, 83, 83);
+}

@@ -1,146 +1,146 @@
 
- const htmlData = [
-    {
-      "id": 1,
-      "question": "What does HTML stand for?",
-      "options": ["HyperText Markup Language", "HyperText Modeling Language", "HyperText Machine Language", "HighText Markup Language"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 2,
-      "question": "Which of the following elements defines the structure of a webpage?",
-      "options": ["<html>", "<body>", "<head>", "<footer>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 3,
-      "question": "Which HTML tag is used to define an unordered list?",
-      "options": ["<ul>", "<ol>", "<li>", "<dl>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 4,
-      "question": "How do you include a comment in an HTML document?",
-      "options": ["<!-- comment -->", "// comment", "# comment", "/* comment */"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 5,
-      "question": "Which attribute is used to specify the URL of an image in HTML?",
-      "options": ["src", "href", "alt", "link"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 6,
-      "question": "What is the correct HTML element for inserting a line break?",
-      "options": ["<br>", "<lb>", "<break>", "<hr>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 7,
-      "question": "Which tag is used for creating a table in HTML?",
-      "options": ["<table>", "<tr>", "<td>", "<th>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 8,
-      "question": "What does the `<a>` tag in HTML represent?",
-      "options": ["A hyperlink", "An image", "A list", "A section"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 9,
-      "question": "How do you define a heading in HTML?",
-      "options": ["<h1> to <h6>", "<head>", "<title>", "<heading>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 10,
-      "question": "Which HTML tag is used to define a paragraph?",
-      "options": ["<p>", "<para>", "<text>", "<br>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 11,
-      "question": "Which element is used to create a form in HTML?",
-      "options": ["<form>", "<input>", "<button>", "<label>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 12,
-      "question": "What is the purpose of the `alt` attribute in an `<img>` tag?",
-      "options": ["To provide alternative text for an image", "To define the image size", "To set the image URL", "To add a border to the image"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 13,
-      "question": "Which tag is used to define an ordered list?",
-      "options": ["<ol>", "<ul>", "<list>", "<order>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 14,
-      "question": "What is the purpose of the `<meta>` tag in HTML?",
-      "options": ["To provide metadata about the HTML document", "To define the title of the document", "To add a link to a stylesheet", "To create a script"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 15,
-      "question": "How can you include a CSS stylesheet in an HTML document?",
-      "options": ["<link rel='stylesheet' href='styles.css'>", "<style src='styles.css'>", "<css src='styles.css'>", "<script src='styles.css'>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 16,
-      "question": "Which attribute is used to specify the width of an image?",
-      "options": ["width", "size", "height", "length"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 17,
-      "question": "What is the correct HTML for adding a background color to a page?",
-      "options": ["<body style='background-color:blue;'>", "<body bgcolor='blue'>", "<background color='blue'>", "<body background='blue'>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 18,
-      "question": "How do you create a checkbox input in HTML?",
-      "options": ["<input type='checkbox'>", "<checkbox>", "<input type='check'>", "<input type='box'>"],
-      "selected": "",
-      "correct": 0
-    },
-    {
-      "id": 19,
-      "question": "Which HTML tag is used to define a block of text as code?",
-      "options": ["<pre>", "<code>", "<text>", "<block>"],
-      "selected": "",
-      "correct": 1
-    },
-    {
-      "id": 20,
-      "question": "What is the default display value of a `<div>` element?",
-      "options": ["block", "inline", "inline-block", "flex"],
-      "selected": "",
-      "correct": 0
-    }
-  ]
+const htmlData = [
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": ["HighText Markup Language", "HyperText Markup Language", "HyperText Modeling Language", "HyperText Machine Language"],
+    "selected": "",
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "question": "Which of the following elements defines the structure of a webpage?",
+    "options": ["<footer>", "<html>", "<body>", "<head>"],
+    "selected": "",
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": ["<ul>", "<dl>", "<li>", "<ol>"],
+    "selected": "",
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "question": "How do you include a comment in an HTML document?",
+    "options": ["/* comment */", "# comment", "<!-- comment -->", "// comment"],
+    "selected": "",
+    "correct": 2
+  },
+  {
+    "id": 5,
+    "question": "Which attribute is used to specify the URL of an image in HTML?",
+    "options": ["link", "alt", "href", "src"],
+    "selected": "",
+    "correct": 3
+  },
+  {
+    "id": 6,
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["<break>", "<hr>", "<lb>", "<br>"],
+    "selected": "",
+    "correct": 3
+  },
+  {
+    "id": 7,
+    "question": "Which tag is used for creating a table in HTML?",
+    "options": ["<tr>", "<th>", "<td>", "<table>"],
+    "selected": "",
+    "correct": 3
+  },
+  {
+    "id": 8,
+    "question": "What does the `<a>` tag in HTML represent?",
+    "options": ["A section", "An image", "A hyperlink", "A list"],
+    "selected": "",
+    "correct": 2
+  },
+  {
+    "id": 9,
+    "question": "How do you define a heading in HTML?",
+    "options": ["<head>", "<title>", "<h1> to <h6>", "<heading>"],
+    "selected": "",
+    "correct": 2
+  },
+  {
+    "id": 10,
+    "question": "Which HTML tag is used to define a paragraph?",
+    "options": ["<br>", "<para>", "<text>", "<p>"],
+    "selected": "",
+    "correct": 3
+  },
+  {
+    "id": 11,
+    "question": "Which element is used to create a form in HTML?",
+    "options": ["<form>", "<button>", "<label>", "<input>"],
+    "selected": "",
+    "correct": 0
+  },
+  {
+    "id": 12,
+    "question": "What is the purpose of the `alt` attribute in an `<img>` tag?",
+    "options": ["To add a border to the image", "To provide alternative text for an image", "To define the image size", "To set the image URL"],
+    "selected": "",
+    "correct": 1
+  },
+  {
+    "id": 13,
+    "question": "Which tag is used to define an ordered list?",
+    "options": ["<order>", "<ol>", "<ul>", "<list>"],
+    "selected": "",
+    "correct": 1
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of the `<meta>` tag in HTML?",
+    "options": ["To provide metadata about the HTML document", "To define the title of the document", "To create a script", "To add a link to a stylesheet"],
+    "selected": "",
+    "correct": 0
+  },
+  {
+    "id": 15,
+    "question": "How can you include a CSS stylesheet in an HTML document?",
+    "options": ["<link rel='stylesheet' href='styles.css'>", "<css src='styles.css'>", "<style src='styles.css'>", "<script src='styles.css'>"],
+    "selected": "",
+    "correct": 0
+  },
+  {
+    "id": 16,
+    "question": "Which attribute is used to specify the width of an image?",
+    "options": ["width", "length", "height", "size"],
+    "selected": "",
+    "correct": 0
+  },
+  {
+    "id": 17,
+    "question": "What is the correct HTML for adding a background color to a page?",
+    "options": ["<body bgcolor='blue'>", "<background color='blue'>", "<body style='background-color:blue;'>", "<body background='blue'>"],
+    "selected": "",
+    "correct": 2
+  },
+  {
+    "id": 18,
+    "question": "How do you create a checkbox input in HTML?",
+    "options": ["<input type='box'>", "<input type='checkbox'>", "<checkbox>", "<input type='check'>"],
+    "selected": "",
+    "correct": 1
+  },
+  {
+    "id": 19,
+    "question": "Which HTML tag is used to define a block of text as code?",
+    "options": ["<block>", "<text>", "<pre>", "<code>"],
+    "selected": "",
+    "correct": 3
+  },
+  {
+    "id": 20,
+    "question": "What is the default display value of a `<div>` element?",
+    "options": ["inline-block", "flex", "inline", "block"],
+    "selected": "",
+    "correct": 3
+  }
+]
 
  const cssData =  [
     {
